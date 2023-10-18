@@ -74,5 +74,5 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: ${{ steps.extract_and_build.outputs.module_base_name }}
-          path: result/$subdir/
+          path: result/**/*
           if-no-files-found: error
